@@ -1,0 +1,51 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>net.petrikainulainen.springdata.jpa</groupId>
+	<artifactId>java-jpa-root</artifactId>
+	<version>1.0</version>
+	<packaging>pom</packaging>
+
+	<name>JAVA - JPA - 1.0</name>
+	<description>JAVA - JPA - 1.0</description>
+
+	<modules>
+		<module>java-criteria-api</module>
+		<module>java-custom-method-all-repos</module>
+		<module>java-custom-method-single-repo</module>
+		<module>java-integration-testing</module>
+		<module>java-querydsl</module>
+		<module>java-querydsl-multi-module</module>
+		<module>java-query-methods</module>
+		<module>java-tutorial-part-eight</module>
+		<module>java-tutorial-part-seven</module>
+	</modules>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<compilerArguments>
+						<verbose />
+					</compilerArguments>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.3.1</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.1.1</version>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
